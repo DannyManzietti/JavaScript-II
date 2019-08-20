@@ -100,3 +100,10 @@ console.log(JaxbeanRunners);
 
 
 // Problem 3
+//how many shirts of each size
+console.log(runners.reduce((item, a) => {
+  item[a.shirt_size] = item[a.shirt_size] ? item[a.shirt_size]+1 : 1;
+  return item;
+}, 
+ {}
+  ));
